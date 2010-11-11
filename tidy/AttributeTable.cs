@@ -362,7 +362,7 @@ namespace TidyNet
 				new Attribute("gridy", HtmlVersion.Proprietary, null), 
 				new Attribute("headers", HtmlVersion.Html40, null), 
 				new Attribute("height", HtmlVersion.All, null), 
-				new Attribute("href", HtmlVersion.All, AttrCheckImpl.CheckUrl), 
+                new Attribute("href", HtmlVersion.All, null), 
 				new Attribute("hreflang", HtmlVersion.Html40, null), 
 				new Attribute("hspace", HtmlVersion.All, null), 
 				new Attribute("http-equiv", HtmlVersion.All, null), 

@@ -1009,15 +1009,18 @@ namespace TidyNet
 					return;
 				}
 				
-				if (element.Tag == tt.TagA)
-				{
-					if (element.Attributes == null)
-					{
-						Report.Warning(lexer, element.Parent, element, Report.DISCARDING_UNEXPECTED);
-						Node.DiscardElement(element);
-						return;
-					}
-				}
+                // <a> elements are just fine when they don't have attributes. In this case, they should act just like
+                // a <span> element.
+
+                //if (element.Tag == tt.TagA)
+                //{
+                //    if (element.Attributes == null)
+                //    {
+                //        Report.Warning(lexer, element.Parent, element, Report.DISCARDING_UNEXPECTED);
+                //        Node.DiscardElement(element);
+                //        return;
+                //    }
+                //}
 				
 				/*
 				ParseInline is used for some block level elements like H1 to H6
