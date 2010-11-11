@@ -1,0 +1,9 @@
+C:\Users\dand.POP\Downloads\TidyNet-1.0.1-src-2\TidyNet\bin\Debug\TidyNet.XML
+C:\Users\dand.POP\Downloads\TidyNet-1.0.1-src-2\TidyNet\bin\Debug\TidyNet.dll
+C:\Users\dand.POP\Downloads\TidyNet-1.0.1-src-2\TidyNet\bin\Debug\TidyNet.pdb
+C:\Users\dand.POP\Downloads\TidyNet-1.0.1-src-2\TidyNet\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dand.POP\Downloads\TidyNet-1.0.1-src-2\TidyNet\obj\Debug\TidyNet.TidyMessages.resources
+C:\Users\dand.POP\Downloads\TidyNet-1.0.1-src-2\TidyNet\obj\Debug\ResGen.read.1.tlog
+C:\Users\dand.POP\Downloads\TidyNet-1.0.1-src-2\TidyNet\obj\Debug\ResGen.write.1.tlog
+C:\Users\dand.POP\Downloads\TidyNet-1.0.1-src-2\TidyNet\obj\Debug\TidyNet.dll
+C:\Users\dand.POP\Downloads\TidyNet-1.0.1-src-2\TidyNet\obj\Debug\TidyNet.pdb
