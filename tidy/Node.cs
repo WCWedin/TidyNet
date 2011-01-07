@@ -484,21 +484,21 @@ namespace TidyNet
 			element.Next = node;
 			node.Prev = element;
 		}
-		
+
 		public static void TrimEmptyElement(Lexer lexer, Node element)
 		{
 			TagTable tt = lexer.Options.tt;
-			
+
 			if (lexer.CanPrune(element))
 			{
 				if (element.Type != TextNode)
 				{
 					Report.Warning(lexer, element, null, Report.TRIM_EMPTY_ELEMENT);
 				}
-				
+
 				DiscardElement(element);
 			}
-			else if (element.Tag == tt.TagP && element.Content == null)
+			else if (element.Tag == tt.TagP && element.Content == null && lexer.Options.DropEmptyElements == true)
 			{
 				/* replace <p></p> by <br><br> to preserve formatting */
 				Node node = lexer.InferredTag("br");

@@ -389,7 +389,7 @@ namespace TidyNet
 			}
 		}
 
-		/// <summary>Discard empty p elements</summary>
+		/// <summary>Discard empty p elements. If DropEmptyElements is true this is ignored.</summary>
 		public virtual bool DropEmptyParas
 		{
 			get
@@ -399,6 +399,19 @@ namespace TidyNet
 			set
 			{
 				_dropEmptyParas = value;
+			}
+		}
+
+		/// <summary>Discard empty elements?</summary>
+		public virtual bool DropEmptyElements
+		{
+			get
+			{
+				return _dropEmptyElements;
+			}
+			set
+			{
+				_dropEmptyElements = value;
 			}
 		}
 
@@ -872,6 +885,7 @@ namespace TidyNet
 		private bool _logicalEmphasis = false; /* replace i by em and b by strong */
 		private bool _dropFontTags = false; /* discard presentation tags */
 		private bool _dropEmptyParas = true; /* discard empty p elements */
+		private bool _dropEmptyElements = true; /* discard empty elements */
 		private bool _fixComments = true; /* fix comments with adjacent hyphens */
 		private bool _breakBeforeBR = false; /* o/p newline before <br> or not? */
 		private bool _burstSlides = false; /* create slides on each h2 element */
