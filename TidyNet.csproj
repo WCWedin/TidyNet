@@ -382,7 +382,9 @@
     <Compile Include="tidy\ValignAttrCheck.cs">
       <SubType>Code</SubType>
     </Compile>
-    <EmbeddedResource Include="TidyMessages.resx" />
+    <EmbeddedResource Include="TidyMessages.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="TidyNet.snk" />

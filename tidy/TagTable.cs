@@ -95,6 +95,10 @@ namespace TidyNet
 			TagObject = Lookup("object");
 			TagDiv = Lookup("div");
 			TagSpan = Lookup("span");
+
+			TagVideo = Lookup("video");
+			TagAudio = Lookup("audio");
+			TagSource = Lookup("source");
 		}
 
 		public TidyOptions Options
@@ -254,6 +258,11 @@ namespace TidyNet
 		public Dict TagDiv = null;
 		public Dict TagSpan = null;
 
+		public Dict TagVideo = null;
+		public Dict TagAudio = null;
+		public Dict TagSource = null;
+
+
 		private TidyOptions _options = null;
 		private Hashtable _tagHashtable = new Hashtable();
 		private static Dict[] _tags = new Dict[]
@@ -371,7 +380,12 @@ namespace TidyNet
 				new Dict("button", HtmlVersion.Html40, ContentModel.Inline, ParserImpl.ParseInline, null), 
 				new Dict("basefont", HtmlVersion.Loose, ContentModel.Inline | ContentModel.Empty, null, null), 
 				new Dict("font", HtmlVersion.Loose, ContentModel.Inline, ParserImpl.ParseInline, null), 
-				new Dict("bdo", HtmlVersion.Html40, ContentModel.Inline, ParserImpl.ParseInline, null)
+				new Dict("bdo", HtmlVersion.Html40, ContentModel.Inline, ParserImpl.ParseInline, null),
+
+				// TODO: Create an attribute checker: CheckAttribsImpl for CheckVideo, CheckAudio, CheckSource
+				new Dict("video", HtmlVersion.All, ContentModel.Block, ParserImpl.ParseBlock, null),
+				new Dict("audio", HtmlVersion.All, ContentModel.Block, ParserImpl.ParseBlock, null),
+				new Dict("source", HtmlVersion.All, ContentModel.Inline | ContentModel.Empty, ParserImpl.ParseInline, null)
 			};
 	}
 }
