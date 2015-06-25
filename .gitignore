@@ -2,3 +2,4 @@ bin/
 obj/
 *.suo
 *.csproj.user
+/TidyNet.1.1.0.0.nupkg

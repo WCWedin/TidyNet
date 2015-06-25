@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 [assembly: AssemblyTitle("Tidy.Net")]
 [assembly: AssemblyDescription("Native .NET HTML Tidy")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Tidy.Net")]
 [assembly: AssemblyProduct("")]
 [assembly: AssemblyCopyright("(c) 1998-2000 (W3C) MIT, INRIA, Keio University")]
 [assembly: AssemblyTrademark("")]
